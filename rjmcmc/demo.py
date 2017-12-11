@@ -138,11 +138,11 @@ def sweep(state):
 	return {"k": k, "W": w, "MU": mu, "SIGMA": sigma, "z": z, "beta": beta,}
 
 state = init_state
-for i in range(200):
+for i in range(800):
 	new_state = sweep(state)
 	print new_state["k"]
 	state = new_state
-	if state["k"] >= 2:
+	if state["k"] >= 2 and i >= 799:
 		count, bins, ignored = plt.hist(y, 100, normed = True , alpha=0.75, color='cyan')
 		plt.plot(bins, sum([state["W"][j]*norm.pdf(bins, state["MU"][j], np.sqrt(state["SIGMA"][j])) for j in range(state["k"])]), linewidth=3, color="magenta")
 		plt.show()
