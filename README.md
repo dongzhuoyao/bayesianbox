@@ -1,5 +1,6 @@
 # bayesianbox
 
+several implementations of bayesian method.
 
 # reference
 
