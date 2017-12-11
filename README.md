@@ -3,4 +3,4 @@
 
 # reference
 
-⋅⋅*  https://github.com/wiseodd/MCMC
+*  https://github.com/wiseodd/MCMC
