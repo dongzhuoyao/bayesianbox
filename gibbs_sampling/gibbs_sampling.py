@@ -1,6 +1,6 @@
 import numpy as np
 import seaborn as sns
-
+from tqdm import tqdm
 
 
 def p_x_given_y(y, mus, sigmas):
@@ -15,11 +15,11 @@ def p_y_given_x(x, mus, sigmas):
     return np.random.normal(mu, sigma)
 
 
-def gibbs_sampling(mus, sigmas, iter=10000):
+def gibbs_sampling(mus, sigmas, iter=40000):
     samples = np.zeros((iter, 2))
     y = np.random.rand() * 10
 
-    for i in range(iter):
+    for i in tqdm(range(iter)):
         x = p_x_given_y(y, mus, sigmas)
         y = p_y_given_x(x, mus, sigmas)
         samples[i, :] = [x, y]
