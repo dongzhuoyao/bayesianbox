@@ -1,4 +1,4 @@
-## [![Gibbs Sampling](https://en.wikipedia.org/wiki/Gibbs_sampling)]
+## [Gibbs Sampling!](https://en.wikipedia.org/wiki/Gibbs_sampling) 
 
 this is a 2D data example, x is 1th dimension, y is 2th dimension.
 
