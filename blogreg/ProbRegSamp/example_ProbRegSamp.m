@@ -1,4 +1,6 @@
-data = load('statlog.heart.data'); X = standardizeCols(data(:,1:13)); y = sign(data(:,14)-1.5);
+data = load('statlog.heart.data'); 
+X = standardizeCols(data(:,1:13));
+y = sign(data(:,14)-1.5);
 [n,p] = size(X);
 X = [ones(n,1) X];
 lambda = 2;
