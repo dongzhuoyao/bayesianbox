@@ -1,6 +1,11 @@
-beta=[1 2 1 0; 1 1 0 1; 0 1 2 1];n=1000;p=4;K=3;
-X=randn(n,p); e=randn(n,1);
-y=zeros(n,K); theta=zeros(K,1);
+beta=[1 2 1 0; 1 1 0 1; 0 1 2 1];
+n=1000;% data num
+p=4; % attribute num
+K=3;% class_num
+X=randn(n,p); 
+e=randn(n,1);
+y=zeros(n,K); 
+theta=zeros(K,1);
 vInv=0.25*eye(p);numSamples=1000; 
 
 for i=1:n

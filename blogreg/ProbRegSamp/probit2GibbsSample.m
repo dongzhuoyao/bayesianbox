@@ -3,7 +3,7 @@ function [beta] = probit2GibbsSample(X,y,v,numSamples)
 [n,p] = size(X);
 
 V = inv(v + X'*X);
-B = V*X';
+B = V*X';% in (16), we just assume that b=0
 
 % Initialize w
 w = zeros(p,1);
