@@ -1,6 +1,8 @@
 # bayesianbox
 
 several implementations of bayesian method.
+![bayesian.jpeg](bayesian.jpeg)
+Photed in Bayesian Class
 
 # reference
 
